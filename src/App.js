@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import WhatsHot from './Components/WhatsHot/WhatsHot';
+import NewRelease from './Components/NewReleases/NewReleases';
+import "./App.css";
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Navbar from './Components/CommonComponents/Navbar';
+import Footer from './Components/CommonComponents/Footer';
+import Page404 from './Components/Page404/Page404';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <Routes>
+          <Route
+            path="/"
+            element={<Navigate to="/new" replace />}
+          />
+          <Route path="/new" element={<NewRelease />}></Route>
+          <Route path="/hot" element={<WhatsHot />}></Route>
+          <Route path='*' element={<Page404 />}></Route>
+      </Routes>
+      <Footer/>
     </div>
   );
 }

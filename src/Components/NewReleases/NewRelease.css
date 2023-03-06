@@ -1,0 +1,67 @@
+.Carousel{
+    height: 100%;
+    width: 100%;
+    margin: auto; 
+}
+
+.page-title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.container-size{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    border-bottom: 1px solid gray;
+    margin-bottom: 60px;
+}
+
+.slick-dots{
+    bottom: 25px !important;
+}
+
+.slick-dots > li{
+    margin: 0 !important;
+}
+
+.slick-dots > li > button::before{
+    font-size: 10px !important;
+}
+
+.movie-image-container{
+    width: 100%;
+    margin: auto;
+}
+
+.movie-image{
+    width: 100%;
+    object-fit: contain;
+}
+
+.poster-overview-container{
+    display: flex;
+    height: auto;
+    width: auto;
+    padding: 50px 50px 0 50px;
+}
+
+.descItem-container{
+    margin: 0px 10px 10px 15px;
+}
+
+.title{
+    margin: 0%;
+    font-weight: 400;
+}
+
+.ratings{
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.overview{
+    font-size: 20px;
+}

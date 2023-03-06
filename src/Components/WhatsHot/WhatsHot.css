@@ -1,0 +1,37 @@
+.title-size{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+.title-font{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.rating-size{
+    font-size: 18px;
+}
+
+.MovieList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 60px
+}
+
+.card{
+    text-align: center;
+    border-bottom: 2px solid #80808042;
+}
+
+.card-image{
+    max-width: 100%;
+}
+
+.movie-list-container{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
